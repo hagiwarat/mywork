@@ -1,0 +1,259 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #24292e;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-left: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  box-sizing: border-box;
+  max-width: 960px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+}
+
+.header-title a, .header-title img {
+  display: block;
+}
+
+.header-item {
+  display: flex;
+}
+
+.instagram {
+  width: 20px;
+}
+
+/* メイン */
+.mainvisual {
+  margin-bottom: 87px;
+}
+
+.mainvisual-pc {
+  display: block;
+  object-fit: cover;
+  height: 420px;
+}
+
+.mainvisual-sp {
+  display: none;
+  object-fit: cover;
+  height: 420px;
+}
+
+.inner-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.about, .works, .news, .contact {
+  margin-bottom: 130px;
+}
+
+.about p, .news-list, .form-item, .submit input {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+
+/* about */
+.about p {
+  margin-bottom: 30px;
+}
+
+.about p:last-child {
+  text-align: justify;
+}
+
+/* works */
+.works-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item-list {
+  width: 31%;
+  margin-bottom: 22px;
+}
+
+/* news */
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #c8c8c8;
+}
+
+.news-list dt, .news-list dd {
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.news-list dt {
+  box-sizing: border-box;
+  width: 20%;
+  padding: 15px;
+}
+
+.news-list dd {
+  box-sizing: border-box;
+  width: 80%;
+  padding: 15px;
+}
+
+/* contact */
+.form-item {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.label {
+  float: left;
+  width: 15%;
+  display: block;
+}
+
+.input, .textarea {
+  box-sizing: border-box;
+  float: left;
+  width: 85%;
+  padding: 10px;
+  border: 1px solid #c8c8c8;
+  font: inherit;
+}
+
+.textarea {
+  height: 160px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.submit input {
+  width: 200px;
+  padding: 15px 0;
+  background-color: #24292e;
+  color: #fff;
+  border: 1px solid #24292e;
+}
+
+.submit input:hover {
+  background-color: #fff;
+  color: #24292e;
+  cursor: pointer;
+}
+
+/* フッター */
+.page-footer {
+  background-color: #24292e;
+}
+
+.page-footer p {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 600px) {
+  li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+    padding: 10px 0;
+  }
+
+  li:first-child {
+    margin-left: 0;
+  }
+
+/* ヘッダー */
+  .page-header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-title {
+    margin-top: 20px;
+  }
+
+/* メイン */
+  .mainvisual-pc {
+    display: none;
+  }
+
+  .mainvisual-sp {
+    display: block;
+  }
+
+  .inner-title {
+    margin-bottom: 40px;
+  }
+
+  .about, .works, .news, .contact {
+    margin-bottom: 70px;
+  }
+
+  .works-item {
+    flex-direction: column;
+  }
+
+  .item-list {
+    width: 100%;
+  }
+
+  .news-list {
+    flex-direction: column;
+  }
+
+  .news-list dt, .news-list dd {
+    padding: 0 15px;
+    width: 100%;
+  }
+
+  .news-list dt {
+    border: none;
+    padding-top: 15px;
+  }
+
+  .news-list dd {
+    padding-bottom: 15px;
+  }
+
+  .label, .input, .textarea {
+    float: none;
+    width: 100%;
+  }
+
+  .submit {
+    margin-top: 30px;
+  }
+}
